@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+    
+    <form action="/submit_form" method="POST">
+        <!-- Name Field -->
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- Email Field -->
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Gender Selection (Radio Buttons) -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label><br><br>
+
+        <!-- Interests Selection (Checkboxes) -->
+        <label>Interests:</label><br>
+        <input type="checkbox" id="reading" name="interests" value="Reading">
+        <label for="reading">Reading</label><br>
+        <input type="checkbox" id="music" name="interests" value="Music">
+        <label for="music">Music</label><br>
+        <input type="checkbox" id="sports" name="interests" value="Sports">
+        <label for="sports">Sports</label><br><br>
+
+        <!-- Preferences -->
+        <label for="preferences">Preferences:</label><br>
+        <select id="preferences" name="preferences">
+            <option value="Newsletter">Subscribe to Newsletter</option>
+            <option value="Promotions">Receive Promotions</option>
+            <option value="Updates">Get Product Updates</option>
+        </select><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+        <!-- Reset Button -->
+        <input type="reset" value="Reset">
+    </form>
+
+</body>
+</html>
